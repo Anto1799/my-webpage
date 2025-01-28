@@ -1,0 +1,143 @@
+.heading-container {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.info-icon {
+    font-size: 3rem;
+    color: var(--third-bg-color);
+    vertical-align: middle;
+    margin-left: 1rem;
+    cursor: help;
+}
+
+.filter-container {
+    margin-bottom: 4rem;
+}
+
+
+.filter-btn {
+    background: transparent;
+    border: 2px solid var(--third-bg-color);
+    color: var(--text-color);
+    padding: 0.8rem 2rem;
+    margin: 0 0.5rem;
+    border-radius: 50px;
+    font-size: 1.4rem;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: var(--third-bg-color);
+    color: var(--bg-color);
+}
+
+.blog-container {
+    padding: 4rem 8%;
+    min-height: calc(100vh - 150px);
+}
+
+.card {
+    background: var(--second-bg-color);
+    border: 1px solid rgba(0, 255, 238, 0.1);
+    height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 255, 238, 0.2);
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.category-container {
+    margin-bottom: 1rem;
+}
+
+.category-badge {
+    color: var(--third-bg-color);
+    background-color: rgba(0, 255, 238, 0.1);
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    display: inline-block;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-title {
+    color: var(--second-text-color);
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.card-text {
+    color: var(--text-color);
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+}
+
+.card-footer {
+    background: transparent;
+    border-top: 1px solid rgba(0, 255, 238, 0.1);
+    margin-top: auto;
+    padding: 1rem;
+}
+
+.card-footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post-date {
+    color: var(--text-color);
+    font-size: 1.2rem;
+}
+
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    color: var(--third-bg-color);
+    font-size: 1.4rem;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+.social-link:hover {
+    color: var(--second-text-color);
+}
+
+.social-link i {
+    margin-right: 0.5rem;
+}
+
+.custom-btn {
+    background: var(--third-bg-color);
+    color: var(--bg-color);
+    border: none;
+    padding: 1rem 2.8rem;
+    font-size: 1.6rem;
+    border-radius: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.custom-btn:hover {
+    background: rgba(0, 255, 238, 0.8);
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .blog-container {
+        padding: 3rem 5%;
+    }
+
+    .card-title {
+        font-size: 1.6rem;
+    }
+}

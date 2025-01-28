@@ -1,0 +1,248 @@
+.home {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.home-content h1 {
+    font-size: 7rem;
+    color: var(--second-text-color);
+}
+
+.home-content h3 {
+    font-size: 3rem;
+    color: var(--second-text-color);
+}
+
+.highlight {
+    font-size: 3rem;
+    color: var(--second-text-color);
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+    display: inline-block;
+}
+
+.highlight:hover {
+    color: var(--third-bg-color);
+}
+
+.home-img img {
+    position: relative;
+    top: 3rem;
+    width: 32vw;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.social-icons {
+    margin-top: 2rem;
+}
+
+.social-icons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: var(--second-bg-color);
+    border-radius: 50%;
+    margin: 0 1rem;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.social-icons a:hover {
+    background: var(--third-bg-color);
+    transform: scale(1.1);
+}
+
+.social-icons i {
+    font-size: 2.4rem;
+    color: var(--second-text-color);
+}
+
+.social-icons a:hover i {
+    color: var(--bg-color);
+}
+
+.aboutme-text {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.aboutme-text p {
+    font-size: 1.8rem;
+    line-height: 1.6;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+.aboutme-text strong {
+    color: var(--third-bg-color);
+    font-weight: 600;
+    display: inline-block;
+    margin: 0 -0.05em;
+    padding: 0 0.05em;
+}
+
+.aboutme-text em {
+    font-style: italic;
+    color: var(--second-text-color);
+}
+
+.aboutme-text p:last-of-type {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--second-text-color);
+    margin-top: 30px;
+}
+
+.aboutme-text .btn {
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.contact {
+    padding: 50px 0;
+}
+
+.contact form {
+    max-width: 70rem;
+    margin: 1rem auto 3rem;
+    text-align: center;
+}
+
+.contact form input,
+.contact form textarea {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--second-text-color);
+    background-color: var(--second-bg-color);
+    border-radius: 0.8rem;
+    margin: 0.7rem 0;
+}
+
+.contact form textarea {
+    resize: none;
+}
+
+.contact form .sendmessage .btn {
+    color: var(--bg-color);
+    background-color: var(--third-bg-color);
+}
+
+.error-message {
+    color: #ff0000;
+    font-size: 1.2rem;
+    display: block;
+    margin-top: 0.5rem;
+    visibility: hidden;
+}
+
+.input-box input.error,
+.input-group2 textarea.error {
+    border: 1px solid #ff0000;
+}
+
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.loading-spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 1rem;
+}
+
+.loading-overlay p {
+    color: white;
+    font-size: 1.2rem;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+input[type="submit"]:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+    .home {
+        flex-direction: column;
+        padding-top: 5rem;
+    }
+
+    .home-content {
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    .home-content h1 {
+        font-size: 5rem;
+    }
+
+    .home-img img {
+        width: 70vw;
+        margin-top: 4rem;
+    }
+
+    .aboutme-text {
+        padding: 0 20px;
+    }
+
+    .contact form {
+        margin: 0 20px;
+    }
+
+    .social-icons {
+        margin-top: 1.5rem;
+    }
+    
+    .social-icons a {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+    
+    .social-icons i {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .home-content h1 {
+        font-size: 4rem;
+    }
+
+    .home-img img {
+        width: 90vw;
+    }
+}
+
+@media (max-width: 365px) {
+    .home-img img {
+        width: 90vw;
+    }
+}

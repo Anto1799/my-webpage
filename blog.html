@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Antonio Perrotta's Blog - Latest updates on blockchain, finance, and technology. In-depth analysis and industry insights.">
+    <meta name="keywords" content="blockchain blog, crypto news, finance, technology, Antonio Perrotta, blockchain updates">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Blog - Antonio Perrotta">
+    <meta name="twitter:description" content="Explore the latest articles about blockchain, finance, and technology. Tech industry updates and analysis.">
+    <meta name="author" content="Antonio Perrotta">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.antonioperrotta.com/blog">
+    <meta property="og:title" content="Blog - Antonio Perrotta">
+    <meta property="og:description" content="Explore the latest articles about blockchain, finance, and technology. Tech industry updates and analysis.">
+    <meta property="og:image" content="https://www.antonioperrotta.com/assets/images/profile/image.png">
+    <title>Antonio Perrotta - Blog</title>
+    <link rel="icon" href="https://img.icons8.com/dusk/64/administrator-male.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/blog.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">Antonio Perrotta</a>
+        <div class="menu-icon" aria-label="Toggle navigation menu" role="button" tabindex="0">&#9776;</div>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="index.html#aboutme">About Me</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="index.html#contact">Contact Me</a>
+            <a href="blog.html" class="active">Blog</a>
+        </nav>
+    </header>
+
+    <main class="blog-container">
+        <section class="latest-news">
+            <div class="heading-container">
+                <h2 class="heading">Latest News
+                    <i class="bi bi-info-circle info-icon" data-bs-toggle="tooltip" data-bs-placement="right"
+                        aria-label="Information about the news section"
+                        title="Here I share significant news about blockchain, finance, and other topics I find particularly relevant."></i>
+                </h2>
+            </div>
+            <div class="filter-container text-center mb-4">
+                <button class="filter-btn active" data-category="all" aria-label="Show all posts">All</button>
+                <button class="filter-btn" data-category="Blockchain"
+                    aria-label="Filter Blockchain posts">Blockchain</button>
+                <button class="filter-btn" data-category="Finance" aria-label="Filter Finance posts">Finance</button>
+                <button class="filter-btn" data-category="Tech" aria-label="Filter Tech posts">Tech</button>
+            </div>
+            <div class="row g-4" id="news-grid">
+                <!-- News cards will be dynamically added here -->
+
+            </div>
+            <div class="text-center mt-5">
+                <button id="load-more" class="btn custom-btn" aria-label="Load more posts">Load More</button>
+                <button id="hide-posts" class="btn custom-btn ms-3" aria-label="Hide additional posts">Hide</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Antonio Perrotta. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/blog.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

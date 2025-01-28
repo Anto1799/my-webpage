@@ -1,0 +1,166 @@
+.portfolio {
+    padding: 50px 0;
+}
+
+.portfolio h2 span {
+    color: var(--third-bg-color);
+}
+
+.portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 20px;
+}
+
+.portfolio-box {
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+    display: flex;
+    margin: 0;
+    aspect-ratio: 3/4;
+}
+
+.portfolio-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s ease;
+}
+
+.portfolio-layer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.7), var(--third-bg-color));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+    transform: translateY(100%);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    opacity: 0;
+}
+
+.portfolio-box:hover .portfolio-layer {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.portfolio-layer h4 {
+    font-size: 2.8rem;
+    color: var(--second-text-color);
+    margin-bottom: 1rem;
+}
+
+.portfolio-layer p {
+    font-size: 1.6rem;
+    color: var(--second-text-color);
+    margin-bottom: 1.5rem;
+    max-width: 80%;
+}
+
+.timeline {
+    position: relative;
+    padding: 20px 0;
+}
+
+.timeline-item {
+    position: relative;
+    padding: 20px 0;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background-color: var(--third-bg-color);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.timeline-content {
+    width: 45%;
+    margin-left: auto;
+    position: relative;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.timeline-content::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: var(--third-bg-color);
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.timeline-item:nth-child(odd) .timeline-content::before {
+    right: -60px;
+}
+
+.timeline-item:nth-child(even) .timeline-content::before {
+    left: -60px;
+}
+
+@media (max-width: 768px) {
+    .portfolio-container {
+        grid-template-columns: repeat(auto-fit, minmax(250px,fr));
+    }
+
+    .portfolio-layer h4 {
+        font-size: 2.4rem;
+    }
+
+    .portfolio-layer p {
+        font-size: 1.4rem;
+    }
+
+    .timeline-content {
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    .timeline-item:nth-child(even) .timeline-content {
+        margin-right: 0;
+    }
+    
+    .timeline-item::before {
+        content: '';
+        position: absolute;
+        width: 4px;
+        height: 100%;
+        background-color: var(--third-bg-color);
+        left: 0;
+    }
+
+    .timeline-item:last-child::before {
+        height: 76%; /* Riduce l'altezza solo per l'ultima card */
+    }
+    
+    .timeline-content::before {
+        display: none;
+    }
+}
+
+@media (max-width: 450px) {
+    .portfolio-layer h4 {
+        font-size: 2rem;
+    }
+
+    .portfolio-layer p {
+        font-size: 1.2rem;
+    }
+}
