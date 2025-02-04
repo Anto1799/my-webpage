@@ -144,10 +144,11 @@
         height: 100%;
         background-color: var(--third-bg-color);
         left: 0;
+        top: 22px;
     }
 
     .timeline-item:last-child::before {
-        height: 76%; /* Riduce l'altezza solo per l'ultima card */
+        height: 76%; 
     }
     
     .timeline-content::before {
