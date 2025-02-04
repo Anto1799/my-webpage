@@ -148,7 +148,7 @@
     }
 
     .timeline-item:last-child::before {
-        height: 76%; 
+        height: 74%; 
     }
     
     .timeline-content::before {
